@@ -34,5 +34,10 @@ public class CustomerController {
         return result;
     }
 
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello world";
+    }
+
 
 }
