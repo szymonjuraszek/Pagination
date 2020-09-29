@@ -1,3 +1,4 @@
 runtime: java11
 handlers:
-  - url: /.*
+  - url: /
+    static_dir: static
