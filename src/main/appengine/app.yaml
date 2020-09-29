@@ -1,9 +1,5 @@
 runtime: java11
-entrypoint: java -noverify BOOT-INF/resources/:BOOT-INF/classes/:BOOT-INF/lib/* com.szymon.ApkaApplication
+env: flex
 handlers:
-  - url: (/.*)
-    static_files: BOOT-INF/classes/static\1
-    upload: BOOT-INF/classes/static/.*\.(gif|png|jpg|svg|ico|css|js|html)$
-    require_matching_file: True
-    login: optional
-    secure: optional
+  - url: /.*
+  script:
